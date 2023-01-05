@@ -1,29 +1,8 @@
+/* VARIABLES */
 :root {
     --textGrey: #3E3E3E;
     --textYellow: #FFF53B;
-    --background: #005;
-    --primary: #88D5BF;
-    --secondary: #5D6BF8;
-    --third: #e27fcb;
-}
-
-body {
-    background-image: linear-gradient(to bottom right, #C1CCFC, #DFDFDF);
-    height: 100%;
-    margin: 32;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-h1 {
-    color: var(--textGrey);
-    font-family: sans-serif;
-    font-size: 4.0vw;
-    line-height: 0.4;
-}
-
-h1:hover {
-    color: yellow;
+    --textWhite: #FFFFFF;
 }
 
 .greyText {
@@ -34,6 +13,30 @@ h1:hover {
     color: var(--textYellow);
 }
 
+.whiteText {
+    color: var(--textWhite);
+}
+
+/* BACKGROUND */
+body {
+    background-image: linear-gradient(to bottom right, #C1CCFC, #DFDFDF);
+    height: 100%;
+    margin: 32;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* HEADING 1 */
+h1 {
+    color: var(--textGrey);
+    font-family: sans-serif;
+    font-size: 4.0vw;
+    line-height: 0.4;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/* LINKS */
 a:link {
     text-decoration: none;
     color: var(--textGrey);
@@ -54,20 +57,19 @@ a:hover {
     color: var(--textYellow);
 }
 
+/* PARAGRAPH */
 p {
     color: var(--textGrey);
     font-family: sans-serif;
     font-size: 1.6vw;
     line-height: 2.4vw;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
-canvas {
-    border: 10px solid;
-    background: #6ab150
-}
-
-.container {
-    display: flex;
+/* MORPHING CIRCLE */
+* {
+    box-sizing: border-box;
 }
 
 .container.space-around {
@@ -78,30 +80,22 @@ canvas {
     justify-content: space-between;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .container {
     align-items: center;
     display: flex;
     height: 40vh;
     justify-content: center;
+    color: #FFF53B;
 }
 
 .shape {
     animation: morph 8s ease-in-out infinite;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    height: 40vh;
+    /* border-radius: 15% 12% 15% 13% / 13% 12% 15% 14%; */
     transition: all 1s ease-in-out;
-    width: 40vh;
     z-index: 5;
     box-shadow: 5px 5px 10px 1px #aeaeae;
-}
-
-.image {
-    height: 40vh;
-    width: 40vh;
+    background-color: #2372C2;
 }
 
 @keyframes morph {
