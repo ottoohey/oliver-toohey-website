@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oliver Toohey - A Creative Expression of my Technical Abilities</title>
-
 </head>
 
 <body>
+
     <h1 onmouseover="changeImage('images/portrait.png')">
         OLIVERTOOHEY.COM
     </h1>
 
     <br />
-    <br />
-    <br />
 
-    <section>
-        <div class="container space-around">
+    <div class="row">
+        <div class="column">
             <div style="text-align: left;">
                 <div style="display: inline-block; text-align: left;">
                     <h1>
@@ -41,10 +40,13 @@
                         <a href="http://127.0.0.1:5500/graphic-design.html"
                             onmouseover="changeImage('images/graphic-design.png')">/GRAPHIC-DESIGN</a>
                     </h1> -->
+
                 </div>
             </div>
+        </div>
+        <div class="column">
             <div class="container">
-                <img id="movingImage" class="shape" style="--shapeHeight: 50vh; --shapeWidth: 50vh"
+                <img id="movingImage" class="shape" style="--shapeHeight: 75%; --shapeWidth: 75%"
                     src="images/portrait.png">
                 <style>
                     .shape {
@@ -55,18 +57,8 @@
                 </img>
             </div>
         </div>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-    </section>
+    </div>
+    </div>
 
     <script>
         function changeImage(selectedImage) {
