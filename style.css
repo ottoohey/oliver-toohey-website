@@ -31,35 +31,6 @@ body {
     background-attachment: fixed;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    justify-content: center;
-}
-
-.left {
-    width: 75%;
-}
-
-.right {
-    width: 25%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
 /* HEADING 1 */
 h1 {
     color: var(--textGrey);
@@ -121,18 +92,19 @@ p {
     justify-content: left;
 }
 
-.container {
+/* .container {
     align-items: center;
     display: flex;
     justify-content: center;
     color: #FFF53B;
-}
+} */
 
 .staticShape {
     border-radius: 30pt;
-    z-index: 5;
+    /* z-index: 5; */
     box-shadow: 5px 5px 10px 1px #aeaeae;
     background-color: #2372C2;
+    margin: 32px;
 }
 
 .shape {
@@ -159,17 +131,15 @@ p {
 }
 
 .screenshot {
-    border-radius: 25px;
+    border-radius: 4vh;
     border: 3px solid white;
-    margin-left: 24px;
+    margin-top: 12px;
 }
 
 .logo {
     border-radius: 100%;
     border: 10px solid white;
     background-color: white;
-    margin-right: 48px;
-    margin-left: 24px;
-    height: 50%;
-    width: 50%;
+    height: 200px;
+    width: 200px;
 }
