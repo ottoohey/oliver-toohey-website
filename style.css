@@ -166,6 +166,7 @@ p {
 @media only screen and (max-width: 600px) {
     .automation-icon {
         margin-left: 0px;
+        margin-bottom: 24px;
     }
     .automation-icon-container {
       text-align: center;

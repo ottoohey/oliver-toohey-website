@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oliver Toohey - A Creative Expression of my Technical Abilities</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <h1 onmouseover="changeImage('images/portrait.png')">
         <strong>OLIVERTOOHEY.COM</strong>
     </h1>
@@ -16,56 +19,82 @@
     <br />
     <div class="container text-center">
         <div class="row">
-          <div class="col">
-            <div style="text-align: left;">
-                <div style="display: inline-block; text-align: left;">
-                    <h1>
-                        <a href="http://127.0.0.1:5500/about-me.html"
-                            onmouseover="changeImage('images/portrait.png')">/ABOUT-ME</a>
-                    </h1>
-                    <h1>
-                        <a href="http://127.0.0.1:5500/app-development.html"
-                            onmouseover="changeImage('images/app-dev.png')">/APP-DEVELOPMENT</a>
-                    </h1>
-                    <h1>
-                        <a href="http://127.0.0.1:5500/automation.html"
-                            onmouseover="changeImage('images/automation.png')">/AUTOMATION</a>
-                    </h1>
-                    <h1>
-                        <a href="http://127.0.0.1:5500/work-experience.html"
-                            onmouseover="changeImage('images/work-experience.png')">/WORK-EXPERIENCE</a>
-                    </h1>
-                    <h1>
-                        <a href="http://127.0.0.1:5500/graphic-design.html"
-                            onmouseover="changeImage('images/graphic-design.png')">/GRAPHIC-DESIGN</a>
-                    </h1>
+            <div class="col">
+                <div style="text-align: left;">
+                    <div style="display: inline-block; text-align: left;">
+                        <h1>
+                            <a href="http://olivertoohey.com/about-me.html"
+                                onmouseover="changeImage('images/portrait.png')">/ABOUT-ME</a>
+                        </h1>
+                        <h1>
+                            <a href="http://olivertoohey.com/app-development.html"
+                                onmouseover="changeImage('images/app-dev.png')">/APP-DEVELOPMENT</a>
+                        </h1>
+                        <h1>
+                            <a href="http://olivertoohey.com/automation.html"
+                                onmouseover="changeImage('images/automation.png')">/AUTOMATION</a>
+                        </h1>
+                        <h1>
+                            <a href="http://olivertoohey.com/work-experience.html"
+                                onmouseover="changeImage('images/work-experience.png')">/WORK-EXPERIENCE</a>
+                        </h1>
+                        <h1>
+                            <a href="http://olivertoohey.com/graphic-design.html"
+                                onmouseover="changeImage('images/graphic-design.png')">/GRAPHIC-DESIGN</a>
+                        </h1>
 
+                        <br />
+
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <a target="_blank" href="https://github.com/ottoohey">
+                                            <img class="icon" src="images/icons/github-mark.svg" height="50px"></img>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a target="_blank"
+                                            href="https://www.linkedin.com/in/oliver-toohey-336652154/">
+                                            <img class="icon" src="images/icons/linkedin-logo.png" height="50px"></img>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="container">
-                <img id="movingImage" class="shape" style="--shapeHeight: 75%; --shapeWidth: 75%"
-                    src="images/portrait.png">
-                <style>
-                    .shape {
-                        height: var(--shapeHeight);
-                        width: var(--shapeWidth);
-                    }
-                </style>
-                </img>
+            <div class="col">
+                <br />
+                <div class="container" style="min-width: 100pt;">
+                    <img id="movingImage" class="shape" style="--shapeHeight: 75%; --shapeWidth: 75%"
+                        src="images/portrait.png">
+                    <style>
+                        .shape {
+                            height: var(--shapeHeight);
+                            width: var(--shapeWidth);
+                        }
+                    </style>
+                    </img>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script>
         function changeImage(selectedImage) {
             var image = document.getElementById("movingImage");
             image.src = selectedImage
         }
     </script>
-  </body>
+</body>
+
 </html>
 <!-- <!DOCTYPE html>
 <html>
@@ -90,23 +119,23 @@
             <div style="text-align: left;">
                 <div style="display: inline-block; text-align: left;">
                     <h1>
-                        <a href="http://127.0.0.1:5500/about-me.html"
+                        <a href="http://olivertoohey.com/about-me.html"
                             onmouseover="changeImage('images/portrait.png')">/ABOUT-ME</a>
                     </h1>
                     <h1>
-                        <a href="http://127.0.0.1:5500/app-development.html"
+                        <a href="http://olivertoohey.com/app-development.html"
                             onmouseover="changeImage('images/app-dev.png')">/APP-DEVELOPMENT</a>
                     </h1>
                     <h1>
-                        <a href="http://127.0.0.1:5500/automation.html"
+                        <a href="http://olivertoohey.com/automation.html"
                             onmouseover="changeImage('images/automation.png')">/AUTOMATION</a>
                     </h1>
                     <h1>
-                        <a href="http://127.0.0.1:5500/work-experience.html"
+                        <a href="http://olivertoohey.com/work-experience.html"
                             onmouseover="changeImage('images/work-experience.png')">/WORK-EXPERIENCE</a>
                     </h1>
                     <h1>
-                        <a href="http://127.0.0.1:5500/graphic-design.html"
+                        <a href="http://olivertoohey.com/graphic-design.html"
                             onmouseover="changeImage('images/graphic-design.png')">/GRAPHIC-DESIGN</a>
                     </h1>
 
