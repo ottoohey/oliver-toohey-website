@@ -163,6 +163,14 @@ p {
     height: 360px;
 }
 
+.studied-icons {
+    width: 50pt;
+}
+
+.about-icons {
+    margin: 12px;
+}
+
 @media only screen and (max-width: 600px) {
     .automation-icon {
         margin-left: 0px;
